@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en" class="demo-1 no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>AMIMUN OCMS</title>
+		<meta name="description" content="Online Conference Management System" />
+		<meta name="keywords" content="Amity, AMIMUN, Amity University," />
+		<meta name="author" content="Pranay"/>
+		<link rel="shortcut icon" href="../img/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+        <script src="js/snap.svg-min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+		
+
+		<!--[if IE]>
+  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="container">
+			<!-- Top Navigation -->
+			<div class="codrops-top clearfix">
+				<a class="codrops-icon codrops-icon-prev" href="index.html"><span>Go Back To Home</span></a>
+			</div>
+			<header class="codrops-header">
+				<h1><font color="#FFF">Amity International Model United Nations 2015<span>Online Conference Management System</span></font></h1>	
+				<nav class="codrops-demos">
+					
+					<img src="img/logo.png">
+					
+				</nav>
+			</header>
+			<div class="row">
+			<div class="col-md-4"></div>
+            <div class="col-md-4">
+            	<form role="form">
+            	<form id="register-form" name='registration' action="i_p.php" method="post" onSubmit="return formValidation();" enctype="multipart/form-data">
+            	<h3><center> <font color="#FFF">INTERNATIONAL PRESS</font></center></h3>
+				  <div class="form-group">
+				    <label for="username"><font color="#EEAD0E">Name</font></label>
+				    <input type="text" class="form-control" name="username" size="50">
+				  </div>
+				  <div class="form-group">
+				     <label for="username"><font color="#EEAD0E">Date of Birth</font></label>
+				    <input type="text" class="form-control" name="dob" id="datepicker" size="10">
+				  </div>
+				  <div class="form-group">
+				   <label for="address"><font color="#EEAD0E">Institution</font></label>
+				   <input type="text" class="form-control" name="institution" size="50">
+				    <p class="help-block">Example block-level help text here.</p>
+				  </div>
+				  <div class="form-group">
+				   <label for="address"><font color="#EEAD0E">Course</font></label>
+				   <input type="text" class="form-control" name="course" size="50">
+				    <p class="help-block">Example block-level help text here.</p>
+				  </div>
+				  <div class="form-group">
+				   <label for="address"><font color="#EEAD0E">Year</font></label>
+				   <select name="year" class="form-control">
+                <option selected="" value="Default">(Please select a Year)</option>
+	            <option value="2014">2014</option>
+                <option value="2013">2013</option>
+	            <option value="2012">2012</option>
+	            <option value="2011">2011</option>
+	            <option value="2010">2010</option>
+			    <option value="2009">2009</option>
+				<option value="2008">2008</option>
+				<option value="2007">2007</option>
+				<option value="2006">2006</option>
+				<option value="2005">2005</option>
+				<option value="2004">2004</option>
+				<option value="2003">2003</option>
+				<option value="2002">2002</option>
+				<option value="2001">2001</option>
+				<option value="2000">2000</option>
+				<option value="1999">1999</option>
+				<option value="1998">1998</option>
+				<option value="1997">1997</option>
+				<option value="1996">1996</option>
+				<option value="1995">1995</option>
+				<option value="1994">1994</option>
+				<option value="1993">1993</option>
+				<option value="1992">1992</option>
+				<option value="1991">1991</option>
+				<option value="1990">1990</option>
+				<option value="1989">1989</option>
+				<option value="1988">1988</option>
+				<option value="1987">1987</option>
+				<option value="1986">1986</option>
+				<option value="1985">1985</option>
+				<option value="1984">1984</option>
+				<option value="1983">1983</option>
+				<option value="1982">1982</option>
+				<option value="1981">1981</option>
+				<option value="1980">1980</option>
+				<option value="1979">1979</option>
+				<option value="1978">1978</option>
+				<option value="1977">1977</option>
+				<option value="1976">1976</option>
+				<option value="1975">1975</option>
+				<option value="1974">1974</option>
+				<option value="1973">1973</option>
+				<option value="1972">1972</option>
+				<option value="1971">1971</option>
+				<option value="1970">1970</option>
+             </select>
+				  </div>
+				  <div class="form-group">
+				   <label for="address"><font color="#EEAD0E">Address</font></label>
+				   <textarea name="address" id="address" class="form-control"></textarea>
+				  </div>
+				  <div class="form-group">
+				   <label for="zip"><font color="#EEAD0E">Zip Code</font></label>
+				   <input type="text" name="zip" class="form-control" name="zip" placeholder="ZIP Code" pattern="^([_A-z0-9]){3,}$" maxlength="10" required>
+				   <span class="help-block with-errors">Up to 10 numbers</span>
+				  </div>
+				  <div class="form-group">
+                   <label for="email" class="control-label"><font color="#EEAD0E">Email</font></label>
+                   <input type="email" class="form-control" name="email" id="inputEmail" placeholder="Email" data-error="Bruh, that email address is invalid" required>
+                   </div>
+                   <div class="form-group">
+                   <label for="mobile" class="control-label"><font color="#EEAD0E">Mobile</font></label>
+                   <input type="mobile" class="form-control" id="inputmobile" maxlength="13" name="mobile" placeholder="+91" data-error="Bruh, that mobile no. is invalid" required>
+                   <span class="help-block with-errors">Please Prefix Country Code</span>
+                   </div>
+                   <label id="gender"><font color="#EEAD0E">Sex</font></label><br />
+                   <label class="radio-inline">
+                   <input type="radio" name="sex" id="inlineRadio1" value="Male"><font color="#FFF">Male</font>
+                   </label>
+                   <label class="radio-inline">
+                   <input type="radio" name="sex" id="inlineRadio2" value="Female"><font color="#FFF">Female</font>
+                   </label>
+                   <br /><br />
+                   <div class="form-group">
+				   <label for="exp"><font color="#EEAD0E">Please list your, PREVIOUS MUN EXPERIENCE</font></label>
+				   <textarea name="exp" id="exp" name="exp" class="form-control"></textarea>
+				  </div>
+				  <label id="exp"><font color="#EEAD0E">Following Positions are open</font></label><br />
+                  <label class="radio-inline">
+                  <div class="radio">
+					  <label>
+					    <input type="radio" name="radio2text" value="Reporters" onclick="javascript:radioWithText('two')" checked="checked" id="optionsRadios1" checked>
+					    <font color="#FFF">Reporter</font>
+					  </label>
+					</div>
+					<div class="radio">
+					  <label>
+					    <input type="radio" name="radio2text" value="Photographer" onclick="javascript:radioWithText('two')" checked="checked" id="optionsRadios2" >
+					    <font color="#FFF">Photographer</font>
+					  </label>
+                  </div>
+                  </label><br /><br />
+
+			<!-- Reporters -->
+			<div id="one" style="display:visible;">
+
+			<label for="listofquestion"><blockquote><p class="lead"><font color="#EEAD0E">Reporters</font></p>
+            <footer>Answer the following Three/Four questions according to your committee preferences.</footer>
+			</blockquote></label>
+			<br />
+			<div class="form-group">
+			<label for="q1"><font color="#EEAD0E">Q1.Please attach a sample of your previously published article, if any. Mention the name of the MUN and other related details.</font> </label>
+			<input type="file" name="publishedarticle" id="fileToUpload">
+			</div>
+			<br />
+			<div class="form-group">
+			<label for="q2"><font color="#EEAD0E">Q2.Provide a link to your blog or online portal where your work can be seen,if any.</font></label>
+			<input type="text" name="link" class="form-control" size="50" />
+			</div>
+			<br />
+			<div class="form-group">
+			<label for="q3"><font color="#EEAD0E">Q3.Do you follow any of the series, Game of Thrones or Harry potter? </font></label>
+			<input type="text" name="series" class="form-control" size="50" />
+			</div>
+			<br />
+			<br />
+			<div class="form-group">
+			<label for="listofquestion"><p class="lead"><font color="#EEAD0E"><mark>Applying for conventional UN committees</mark></font></p></label>
+			<br />
+			<div class="form-group">
+			<label for="q4"><font color="#EEAD0E">Q1.Write an article on “Child Trafficking” or “The Untold story of Gaza”</font></label>
+			<textarea name="q4" id="q4" class="form-control"></textarea>
+			</div>
+			<br />
+			<br />
+			<label for="listofquestion"><p class="lead"><font color="#EEAD0E"><mark>Applying for Games of Thrones Committee</mark></font></p></label>
+			<br />
+			<div class="form-group">
+			<label for="q5"><font color="#EEAD0E">Q1.How would the plot have changed if Tywin Lannnister had not intervened in the battle of blackwater bay?</font></label>
+			<textarea name="q5" id="q5" class="form-control"></textarea>
+			</div>
+			<br />
+			<div class="form-group">
+			<label for="q6"><font color="#EEAD0E">Q2.“How is it more noble to kill thousands of men in a battle than to kill a few dozen at dinner?” Discuss with emphasis on Red Wedding.</font></label>
+			<textarea name="q6" id="q6" class="form-control"></textarea>
+			</div>
+			<br />
+			<label for="listofquestion"><p class="lead"><font color="#EEAD0E"><mark>Applying for Ministry of Magic</mark></font></p></label>
+			<br />
+			<div class="form-group">
+			<label for="q7"><font color="#EEAD0E">Q1.How do you think things would have changed if Dumbledore had taken over as Minister for Magic instead of scrimgeour?</font></label>
+			<textarea name="q7" id="q7" class="form-control"></textarea>
+			</div>
+			<br />
+			<div clas="form-group">
+			<label for="q8"><font color="#EEAD0E">Q2.Do you still think that Azkaban should be placed in the control of Dementors? Answer with reasons.</font></label>
+			<textarea name="q8" id="q8" class="form-control"></textarea>
+            </div>
+            <br />
+            <br />
+
+<!-- Photographer -->
+
+            <div id="two" style="display:none;">
+
+            <label for="listofquestion"><blockquote><p class="lead"><font color="#EEAD0E">Photographer</font></p></blockquote></label><br>
+            <div class="form-group">
+			<label for="q9"><font color="#EEAD0E">Attach 5 Best pictures clicked by you. It should be human portraits or photos previously clicked in a MUN conference.</font></label>
+			<input type="file" name="pic1" id="pic1">
+			<input type="file" name="pic2" id="pic2">
+			<input type="file" name="pic3" id="pic3">
+			<input type="file" name="pic4" id="pic4">
+			<input type="file" name="pic5" id="pic5">
+            </div>
+            <div class="form-group">
+			<label for="q10"><font color="#EEAD0E">What should be the right parameters to judge a photographer?
+			</font></label>
+			<textarea name="q10" id="q10" class="form-control"></textarea>
+            </div>
+            </div>
+            <button type="submit" name="submit" value="Submit" class="btn btn-primary btn-lg btn-block">Submit</button>
+			</form>
+            </div>
+            <div class="col-md-4"></div>
+            </div>
+            </div>
+			<!--<div align="center">
+			<h3>Registration: INTERNATIONAL PRESS</h3>
+            <div class="form">
+            <form id="register-form" name='registration' action="i_p.php" method="post" onSubmit="return formValidation();" enctype="multipart/form-data">
+            <label for="username">Name:</label>
+            <input type="text" name="username" size="50" />
+            <br />
+            <label for="username">Date of Birth:</label>
+            <input type="text" name="dob" id="datepicker" size="10" />
+            <br />
+            <label for="address">Institution:</label>
+            <input type="text" name="Institution" size="50" />
+            <br />
+            <label for="address">Course:</label>
+            <input type="text" name="Course" size="50" />
+            <br />
+            <label for="year">Year:</label>
+            <select name="year">
+            <option selected="" value="Default">(Please select a Year)</option>
+	           <option value="2014">2014</option>
+               <option value="2013">2013</option>
+	           <option value="2012">2012</option>
+	           <option value="2011">2011</option>
+	           <option value="2010">2010</option>
+			   <option value="2009">2009</option>
+				<option value="2008">2008</option>
+				<option value="2007">2007</option>
+				<option value="2006">2006</option>
+				<option value="2005">2005</option>
+				<option value="2004">2004</option>
+				<option value="2003">2003</option>
+				<option value="2002">2002</option>
+				<option value="2001">2001</option>
+				<option value="2000">2000</option>
+				<option value="1999">1999</option>
+				<option value="1998">1998</option>
+				<option value="1997">1997</option>
+				<option value="1996">1996</option>
+				<option value="1995">1995</option>
+				<option value="1994">1994</option>
+				<option value="1993">1993</option>
+				<option value="1992">1992</option>
+				<option value="1991">1991</option>
+				<option value="1990">1990</option>
+				<option value="1989">1989</option>
+				<option value="1988">1988</option>
+				<option value="1987">1987</option>
+				<option value="1986">1986</option>
+				<option value="1985">1985</option>
+				<option value="1984">1984</option>
+				<option value="1983">1983</option>
+				<option value="1982">1982</option>
+				<option value="1981">1981</option>
+				<option value="1980">1980</option>
+				<option value="1979">1979</option>
+				<option value="1978">1978</option>
+				<option value="1977">1977</option>
+				<option value="1976">1976</option>
+				<option value="1975">1975</option>
+				<option value="1974">1974</option>
+				<option value="1973">1973</option>
+				<option value="1972">1972</option>
+				<option value="1971">1971</option>
+				<option value="1970">1970</option>
+             </select>
+             <br />
+			<label for="address">Address:</label>
+			<textarea name="address" id="address"></textarea>
+			<br />
+			<label for="zip">ZIP Code:</label>
+			<input type="text" name="zip" size="10"/>
+			<br />
+			<label for="email">Email:</label>
+			<input type="text" name="email" size="50" />
+			<br />
+			<label for="mobile">Mobile No:</label>
+			<input type="text" name="mobile" size="10" />
+			<br />
+			<label id="gender">Sex:</label>
+			<input type="radio" name="sex" value="Male" checked/><span>Male</span>
+			<input type="radio" name="sex" value="Female" /><span>Female</span>
+			<br>
+			<label for="exp">Please list your: PREVIOUS MUN EXPERIENCE:</label>
+			<textarea name="exp" id="exp"></textarea><br></br>
+			<br />
+			<label for="exp">Following Positions are open:</label>
+			Reporters<input type="Radio" name="radio2text" value="Reporters" 
+			onclick="javascript:radioWithText('one')" checked="checked" /><br>
+
+			Photographer<input type="Radio" name="radio2text" value="Photographer" 
+			onclick="javascript:radioWithText('two')" unchecked /><br></br>
+
+			<!-- Reporters -->
+			<!--<div id="one" style="display:visible;">
+
+			<label for="listofquestion"><H3><u>Reporters - Answer the following three/four questions according to your committee preferences.</u>:-</H3></label>
+			<br />
+			<label for="q1">Q1.Please attach a sample of your previously published article, if any.Mention the name of the MUN and other related details. </label>
+			<input type="file" name="publishedarticle" id="fileToUpload">
+			<br />
+			<label for="q2">Q2.Provide a link to your blog or online portal where your work can be seen,if any.</label>
+			<input type="text" name="link" size="50" />
+			<br />
+			<label for="q3">Q3.Do you follow any of the series, Game of Thrones or Harry potter? </label>
+			<input type="text" name="series" size="50" /><br></br>
+			<br />
+			<label for="listofquestion"><H3>Applying for conventional UN committees-</H3></label>
+			<br />
+			<label for="q4">Q1.Write an article on “Child Trafficking” or “The Untold story of Gaza”</label>
+			<textarea name="q4" id="q4"></textarea><br></br>
+			<br />
+			<label for="listofquestion"><H3>Applying for GoT Committee-</H3></label>
+			<br />
+			<label for="q5">Q1.How would the plot have changed if Tywin Lannnister had not intervened
+			in the battle of blackwater bay?</label>
+			<textarea name="q5" id="q5"></textarea>
+			<br />
+			<label for="q6">Q2.“How is it more noble to kill thousands of men in a battle than to kill a few dozen at dinner?” Discuss with emphasis on Red Wedding.</label>
+			<textarea name="q6" id="q6"></textarea><br></br>
+			<br />
+			<label for="listofquestion"><H3>Applying for Ministry of Magic-</H3></label>
+			<br />
+			<label for="q7">1.How do you think things would have changed if Dumbledore had taken
+			over as Minister for Magic instead of scrimgeour?</label>
+			<textarea name="q7" id="q7"></textarea>
+			<br />
+			<label for="q8">Q2.Do you still think that Azkaban should be placed in the control of Dementors? Answer with reasons.</label>
+			<textarea name="q8" id="q8"></textarea>
+
+</div>!-->
+
+<!-- Photographer -->
+
+<!--<div id="two" style="display:none;">
+
+<label for="listofquestion"><H3><u>Photographer-</u>:-</H3></label><br>
+
+<label for="q9">Attach 5 Best pictures clicked by you. It should be human portraits or
+photos previously clicked in a MUN conference.</label>
+<input type="file" name="pic1" id="pic1">
+<input type="file" name="pic2" id="pic2">
+<input type="file" name="pic3" id="pic3">
+<input type="file" name="pic4" id="pic4">
+<input type="file" name="pic5" id="pic5">
+
+<label for="q10">What should be the right parameters to judge a photographer?</label>
+<textarea name="q10" id="q10"></textarea>
+
+</div>
+
+<input type="submit" name="submit" value="Submit" />
+</form>
+</div><!-- content -->
+<!--</div>!-->
+
+		<script>
+			(function() {
+	
+				function init() {
+					var speed = 250,
+						easing = mina.easeinout;
+
+					[].slice.call ( document.querySelectorAll( '#grid > a' ) ).forEach( function( el ) {
+						var s = Snap( el.querySelector( 'svg' ) ), path = s.select( 'path' ),
+							pathConfig = {
+								from : path.attr( 'd' ),
+								to : el.getAttribute( 'data-path-hover' )
+							};
+
+						el.addEventListener( 'mouseenter', function() {
+							path.animate( { 'path' : pathConfig.to }, speed, easing );
+						} );
+
+						el.addEventListener( 'mouseleave', function() {
+							path.animate( { 'path' : pathConfig.from }, speed, easing );
+						} );
+					} );
+				}
+
+				init();
+
+			})();
+		</script>
+		
+	</body>
+</html>

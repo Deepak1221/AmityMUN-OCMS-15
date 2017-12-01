@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" class="demo-1 no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>AMIMUN OCMS</title>
+		<meta name="description" content="Online Conference Management System" />
+		<meta name="keywords" content="Amity, AMIMUN, Amity University," />
+		<meta name="author" content="Pranay" />
+		<link rel="shortcut icon" href="../img/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+	
+		<script src="js/snap.svg-min.js"></script>
+		
+
+		<!--[if IE]>
+  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="container">
+			<!-- Top Navigation -->
+			<div class="codrops-top clearfix">
+				<a class="codrops-icon codrops-icon-prev" href="http://amimun.in"><span>Go Back To Home</span></a>
+				<span class="right">
+			</div>
+			<header class="codrops-header">
+				<h1>Amity International Model United Nations 2015<span>Online Conference Management System</span></h1>	
+				<nav class="codrops-demos">
+					
+					<img src="img/logo.png">
+					
+				</nav>
+			</header>
+			<section id="grid" class="grid clearfix">
+				<a href="i_p.html" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+					<figure>
+						<img src="img/1.jpg" />
+						<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+						<figcaption>
+							<h2>International Press</h2>
+							<p>Give us what we need, Not what we deserve</p>
+							<button>Apply</button>
+						</figcaption>
+					</figure>
+				</a>
+				<a href="g_of_t.html" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+					<figure>
+						<img src="img/2.jpg" />
+						<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+						<figcaption>
+							<h2>Games of Thrones</h2>
+							<p>"When you play the Game of Thrones you win or you die."</p>
+							<button>Apply</button>
+						</figcaption>
+					</figure>
+				</a>
+				<a href="m_o_m.html" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+					<figure>
+						<img src="img/3.jpeg" />
+						<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+						<figcaption>
+							<h2>Ministry of Magic</h2>
+							<p>"Wands at the Ready!"</p>
+							<button>Apply</button>
+						</figcaption>
+					</figure>
+				</a>
+				<a href="d_a.html" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+					<figure>
+						<img src="img/4.jpg" />
+						<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+						<figcaption>
+							<h2>Conventional Committees</h2>
+							<p>You can standby and watch or you can join in and change the world</p>
+							<button>Apply</button>
+						</figcaption>
+					</figure>
+				</a>
+				
+			</section>
+			<div class="footer-bar">
+        &copy; Amity International Model United Nations 2015<br/>
+        <i>Designed & Coded by <a class="no-red" href="http://impranay.github.io" target="_blank">Pranay</a></i><br/>
+        <br/>
+        
+      </div> <!-- Footer ends -->
+		</div><!-- /container -->
+		<script>
+			(function() {
+	
+				function init() {
+					var speed = 250,
+						easing = mina.easeinout;
+
+					[].slice.call ( document.querySelectorAll( '#grid > a' ) ).forEach( function( el ) {
+						var s = Snap( el.querySelector( 'svg' ) ), path = s.select( 'path' ),
+							pathConfig = {
+								from : path.attr( 'd' ),
+								to : el.getAttribute( 'data-path-hover' )
+							};
+
+						el.addEventListener( 'mouseenter', function() {
+							path.animate( { 'path' : pathConfig.to }, speed, easing );
+						} );
+
+						el.addEventListener( 'mouseleave', function() {
+							path.animate( { 'path' : pathConfig.from }, speed, easing );
+						} );
+					} );
+				}
+
+				init();
+
+			})();
+		</script>
+		
+	</body>
+</html>
