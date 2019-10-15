@@ -17,3 +17,6 @@ But unfortunately couldn't pass. The front-end was not possible without the help
    Available under the MIT (https://github.com/jquery/jquery/blob/master/MIT-LICENSE.txt) license. 
    
 - Font from codrops https://tympanus.net/codrops/
+
+You’re editing a file in a project you don’t have write access to
+
